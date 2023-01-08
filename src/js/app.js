@@ -6,16 +6,14 @@ window.addEventListener("DOMContentLoaded", () => {
   const main = document.querySelector(".main");
 
   const image = document.createElement("div");
-  image.className = 'image';
-  // image.classList.add("image");
-  
+  image.className = "image";
 
   const img = document.createElement("img");
   img.setAttribute("src", "https://picsum.photos/200");
   image.appendChild(img);
 
   main.appendChild(image);
-const btn = document.querySelector(".image");
+  const btn = document.querySelector(".image");
   btn.addEventListener("click", () => {
     image.style.transform = "scale(2)";
   });
