@@ -7,7 +7,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   const image = document.createElement("div");
   image.className = 'image';
-  image.classList.add("image");
+  // image.classList.add("image");
   
 
   const img = document.createElement("img");
@@ -15,8 +15,8 @@ window.addEventListener("DOMContentLoaded", () => {
   image.appendChild(img);
 
   main.appendChild(image);
-
-  image.addEventListener("click", () => {
+const btn = document.querySelector(".image");
+  btn.addEventListener("click", () => {
     image.style.transform = "scale(2)";
   });
 
