@@ -13,6 +13,22 @@
     <div class="main">
       <div class="emoji mb-6">💣🤯💥</div>
       <button class="button">Boom?</button>
+      <script>
+        const main = document.querySelector(".main");
+
+        const image = document.createElement("div");
+        image.classList.add("image");
+
+        const img = document.createElement("img");
+        img.setAttribute("src", "https://picsum.photos/200");
+        image.appendChild(img);
+
+        main.appendChild(image);
+
+        image.addEventListener("click", () => {
+          image.style.transform = "scale(2)";
+        });
+      </script>
     </div>
   </body>
 </html>
