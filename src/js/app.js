@@ -6,7 +6,9 @@ window.addEventListener("DOMContentLoaded", () => {
   const main = document.querySelector(".main");
 
   const image = document.createElement("div");
+  image.className = 'image';
   image.classList.add("image");
+  
 
   const img = document.createElement("img");
   img.setAttribute("src", "https://picsum.photos/200");
