@@ -9,7 +9,7 @@ window.addEventListener("DOMContentLoaded", () => {
   image.className = "image";
 
   const img = document.createElement("img");
-  img.setAttribute("src", "https://picsum.photos/200");
+  img.src = "./images/rapid.png";
   image.appendChild(img);
 
   main.appendChild(image);
